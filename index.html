@@ -3,98 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Healing District | Holistic Skincare</title>
+    <title>The Healing District | Main</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header">
-        <img src="Logo.png" class="logo-top" alt="Logo">
-        <nav class="top-nav">
-            <a href="#">Home</a>
-            <a href="#">Skincare</a>
-            <a href="#">Gemstone Shop</a>
-            <a href="#">FAQ</a>
+    <header class="main-nav">
+        <div class="logo-container">
+            <img src="Logo.png" alt="The Healing District Logo" class="brand-logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>Home</li>
+                <li>Skincare</li>
+                <li>Gemstone Shop</li>
+                <li>FAQ</li>
+            </ul>
         </nav>
     </header>
 
-    <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Background.png');">
-        <div class="hero-text">
-            <h1>DISCOVER YOUR PERFECT SKINCARE ROUTINE</h1>
-            <p>Where Skin Glows, Energy Flows!</p>
-            <button class="quiz-btn">Find My Skin Type?</button>
+    <section class="hero-block">
+        <div class="hero-image-wrapper">
+            <img src="Background.png" class="full-hero-img">
+            <button class="hero-quiz-btn">Find My Skin Type?</button>
         </div>
     </section>
 
-    <section class="services-area">
-        <h2 class="section-title">Explore Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card"><img src="Facial.png"><h3>Facial</h3></div>
-            <div class="service-card"><img src="Body.png"><h3>Body</h3></div>
-            <div class="service-card"><img src="Wax.png"><h3>Wax</h3></div>
+    <section class="content-section purple-tint">
+        <h2 class="bold-headline">EXPLORE OUR SERVICES</h2>
+        <div class="horizontal-grid">
+            <div class="service-box"><img src="Facial.png"><h3>Facial</h3></div>
+            <div class="service-box"><img src="Body.png"><h3>Body</h3></div>
+            <div class="service-box"><img src="Wax.png"><h3>Wax</h3></div>
         </div>
-        <button class="coming-soon">Coming Soon</button>
+        <button class="coming-soon-pill">Coming Soon</button>
     </section>
 
-    <section class="heal-section">
-        <h2 class="heal-title">Heal From Within</h2>
-        <div class="category-grid">
-            <div class="cat-item">
+    <section class="content-section">
+        <h2 class="bold-headline">HEAL FROM WITHIN</h2>
+        <div class="horizontal-grid">
+            <div class="cat-box">
                 <h3>Gemstones</h3>
                 <img src="Gemstones.png">
-                <p><u>Jewelry</u> | <u>Stones</u></p>
+                <p class="links">Jewelry | Stones</p>
             </div>
-            <div class="cat-item">
+            <div class="cat-box">
                 <h3>Skin Care</h3>
                 <img src="SkinCare.png">
-                <p><u>Skin Script</u> | <u>Bath & Body</u></p>
+                <p class="links">Cosmetic | Bath</p>
             </div>
-            <div class="cat-item">
+            <div class="cat-box">
                 <h3>Merch</h3>
                 <img src="Merch.png">
-                <p><u>T-Shirts</u> | <u>Waist Beads</u></p>
+                <p class="links">T-Shirts | Waist Beads</p>
             </div>
         </div>
     </section>
 
-    <section class="shop-section">
-        <div class="shop-header">
-            <h2>A HEALER'S MOST WANTED</h2>
-            <p>CHECK OUT OUR BEST-SELLING STARTERS + LATEST PRODUCT DROPS</p>
-        </div>
-        <div class="product-grid">
-            <div class="product">
+    <section class="content-section sage-tint">
+        <h2 class="bold-headline">HEALER'S MOST WANTED</h2>
+        <p class="sub-text">CHECK OUT OUR BEST-SELLING STARTERS</p>
+        <div class="horizontal-grid">
+            <div class="product-item">
                 <img src="Screenshot 2026-04-16 12.21.47 PM.png">
-                <h4>Crystals for House Protection</h4>
-                <p class="price">$13.00</p>
+                <h4>House Protection</h4>
+                <p>$13.00</p>
             </div>
-            <div class="product">
+            <div class="product-item">
                 <img src="Screenshot 2026-04-16 12.21.36 PM.png">
-                <h4>Crystals for Grief and Loss</h4>
-                <p class="price">$13.00</p>
+                <h4>Grief and Loss</h4>
+                <p>$13.00</p>
             </div>
-            <div class="product">
+            <div class="product-item">
                 <img src="Screenshot 2026-04-16 12.21.23 PM.png">
-                <h4>Crystals for Teachers</h4>
-                <p class="price">$13.00</p>
+                <h4>Teachers</h4>
+                <p>$13.00</p>
             </div>
         </div>
     </section>
-
-    <footer class="main-footer">
-        <h3>DOWN FOR MORE? WE GOT YOU.</h3>
-        <p>All the latest product drops and info straight to your inbox</p>
-        <div class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email Address">
-            <button>Submit</button>
-        </div>
-        <div class="footer-links">
-            <h2>Contact and Connect</h2>
-            <p>About | Contact | Policies</p>
-        </div>
-    </footer>
 
 </body>
 </html>
