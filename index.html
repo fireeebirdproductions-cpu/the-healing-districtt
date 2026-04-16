@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Healing District | Holistic Skincare & Gemstones</title>
+    <title>The Healing District | Holistic Wellness</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <img src="Logo.png" class="nav-logo">
-            <ul>
+            <img src="Logo.png" class="nav-logo" alt="The Healing District Logo">
+            <ul class="nav-links">
                 <li>Home</li>
                 <li>Skincare</li>
                 <li>Gemstone Shop</li>
@@ -20,57 +21,70 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-overlay">
-            <img src="Background.png" class="hero-bg">
-            <div class="hero-text">
-                <h1>DISCOVER YOUR PERFECT SKINCARE ROUTINE</h1>
-                <p>Where Skin Glows, Energy Flows!</p>
-                <button class="cta-btn">Find My Skin Type?</button>
-            </div>
+    <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Background.png');">
+        <div class="hero-content">
+            <h1 class="serif">DISCOVER YOUR PERFECT SKINCARE ROUTINE</h1>
+            <p>Where Skin Glows, Energy Flows!</p>
+            <button class="btn-primary">Find My Skin Type?</button>
         </div>
     </header>
 
-    <section class="services">
-        <h2>Explore Our Services</h2>
-        <div class="service-grid">
-            <div class="service-item">Facial</div>
-            <div class="service-item">Body</div>
-            <div class="service-item">Wax</div>
+    <section class="category-section">
+        <h2 class="section-title">Heal From Within</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3 class="sketch-title">Gemstones</h3>
+                <img src="Gemstones.png" alt="Gemstones">
+                <div class="sub-menu"><span>Jewelry</span> | <span>Stones</span></div>
+            </div>
+            <div class="category-card">
+                <h3 class="sketch-title">Skin Care</h3>
+                <img src="SkinCare.png" alt="Skin Care">
+                <div class="sub-menu"><span>Cosmetic</span> | <span>Bath</span></div>
+            </div>
+            <div class="category-card">
+                <h3 class="sketch-title">Merch</h3>
+                <img src="Merch.png" alt="Merch">
+                <div class="sub-menu"><span>T-Shirts</span> | <span>Waist Beads</span></div>
+            </div>
         </div>
-        <button class="status-btn">Coming Soon</button>
     </section>
 
-    <section class="gemstone-shop">
-        <div class="shop-header">
-            <h2>A HEALER'S MOST WANTED</h2>
-            <p>CHECK OUT OUR BEST-SELLING STARTERS</p>
+    <section class="booking-section" style="background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('Booking Background.jpg');">
+        <h2 class="section-title">Explore Our Services</h2>
+        <div class="service-icons">
+            <div class="icon-box"><img src="Facial.png" alt="Facial"><span>Facial</span></div>
+            <div class="icon-box"><img src="Body.png" alt="Body"><span>Body</span></div>
+            <div class="icon-box"><img src="Wax.png" alt="Wax"><span>Wax</span></div>
         </div>
-        <div class="product-container">
+        <button class="btn-secondary">Coming Soon</button>
+    </section>
+
+    <section class="shop-section">
+        <h2 class="serif">A HEALER'S MOST WANTED</h2>
+        <p class="subtitle">CHECK OUT OUR BEST SELLING STARTERS</p>
+        <div class="product-grid">
             <div class="product-card">
-                <img src="Screenshot 2026-04-16 12.21.47 PM.png">
-                <h3>Crystals for House Protection</h3>
-                <p class="price">$13.00</p>
+                <img src="Screenshot 2026-04-16 12.21.47 PM.png" alt="Protection">
+                <h4>Crystals for House Protection</h4>
+                <p>$13.00</p>
             </div>
             <div class="product-card">
-                <img src="Screenshot 2026-04-16 12.21.36 PM.png">
-                <h3>Crystals for Grief and Loss</h3>
-                <p class="price">$13.00</p>
+                <img src="Screenshot 2026-04-16 12.21.36 PM.png" alt="Grief">
+                <h4>Crystals for Grief and Loss</h4>
+                <p>$13.00</p>
             </div>
             <div class="product-card">
-                <img src="Screenshot 2026-04-16 12.21.23 PM.png">
-                <h3>Crystals for Teachers</h3>
-                <p class="price">$13.00</p>
+                <img src="Screenshot 2026-04-16 12.21.23 PM.png" alt="Teachers">
+                <h4>Crystals for Teachers</h4>
+                <p>$13.00</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <h2>Contact and Connect</h2>
-        <div class="social-links">
-            <span>Instagram</span> | <span>Facebook</span> | <span>TikTok</span>
-        </div>
-        <p>&copy; 2026 The Healing District</p>
+        <p>Contact and Connect</p>
+        <div class="socials">Instagram | Facebook | TikTok</div>
     </footer>
 
 </body>
