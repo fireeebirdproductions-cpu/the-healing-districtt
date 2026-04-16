@@ -54,17 +54,18 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* THE FIX: DIVIDER IMAGE WITH ENCODED SPACE */
+/* FIXED SECTION: THE DIVIDER */
 .booking-divider {
     width: 100%;
-    height: 500px; 
-    background-image: url('BookingBackground.jpg'); 
+    min-height: 500px; /* Changed to min-height for better visibility */
+    background-image: url('booking-banner.jpg'); /* MATCH THIS TO YOUR RENAME */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed; 
     margin: 0;
     display: block;
+    clear: both; /* Ensures no other sections crowd it */
 }
 
 /* Headlines */
@@ -83,8 +84,9 @@ body {
 .product-item img { width: 100%; }
 
 .coming-soon-pill { background-color: var(--sage); color: white; border: none; padding: 15px 60px; border-radius: 30px; margin-top: 50px; font-weight: bold; cursor: pointer; }
+
 /* Footer */
-.main-footer { background: white; padding: 60px 5%; border-top: 1px solid #eee; }
+.main-footer { background: white; padding: 60px 5%; border-top: 1px solid #eee; text-align: center; }
 .form input { border: none; border-bottom: 1px solid #333; margin: 0 10px; padding: 10px; width: 250px; }
-.form button { background: white; border: 1px solid #333; padding: 10px 30px; cursor: pointer; }
+.form button { background: white; border: 1px solid #333; padding: 10px 30px; cursor: pointer; font-family: 'Cinzel', serif;}
 .footer-links { margin-top: 50px; background: #2d332d; color: white; padding: 40px; }
