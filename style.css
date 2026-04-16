@@ -63,7 +63,7 @@ body {
 .hero-quiz-btn {
     position: absolute;
     bottom: 60px; /* Positioned bottom */
-    right: 5%;    /* Positioned right */
+    right: 5%;    /* Positioned center */
     padding: 25px 50px; /* Bigger Button */
     font-family: 'Cinzel', serif;
     font-size: 1.4rem;
