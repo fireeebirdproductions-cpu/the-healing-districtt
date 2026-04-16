@@ -58,8 +58,7 @@ body {
 .booking-divider {
     width: 100%;
     height: 500px; 
-    /* Using %20 to represent the space in the filename */
-    background-image: url('Booking%20Background.jpg'); 
+    background-image: url('BookingBackground.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
