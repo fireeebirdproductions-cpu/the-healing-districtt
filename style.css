@@ -1,89 +1,119 @@
+/* Styling Configurations */
 :root {
-    --dark-bg: #1a1a1b;
     --sage: #4a5d4e;
+    --lavender: #e8d9e8;
     --cream: #fdfcf9;
 }
 
-body { 
-    margin: 0; 
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 18px; /* Slightly bigger base text */
-    background-color: var(--cream); 
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px; /* Increased general text size */
+    background-color: var(--cream);
+    color: #333;
 }
 
-/* 1. Logo Bigger & Top Left */
+/* 1. Navbar & Logo Adjustments */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: white;
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 30px 5%;
+    background-color: #fff;
 }
 
-.nav-logo { 
-    height: 120px; /* Bigger logo */
+.nav-logo {
+    height: 150px; /* Logo made significantly bigger */
     width: auto;
+    /* Note: Background must be removed in the image file itself */
 }
 
-.nav-links { 
-    display: flex; 
-    list-style: none; 
-    gap: 30px; 
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-top: 20px;
 }
 
-/* 2. Hero Background & Bottom Right Button */
-.hero { 
-    position: relative; /* Needed to anchor the button */
-    height: 600px; 
-    background-image: url('Background.png'); 
-    background-size: cover; 
-    background-position: center; 
+.nav-links li {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 2. Hero Section & Bottom-Right Button */
+.hero-container {
+    position: relative;
+    height: 650px;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .quiz-btn-large {
     position: absolute;
-    bottom: 40px;
-    right: 5%;
-    padding: 20px 40px; /* Bigger button */
-    font-size: 1.2rem;
+    bottom: 50px; /* Space from bottom */
+    right: 5%;    /* Space from right */
+    padding: 22px 45px;
+    font-size: 1.3rem;
     font-family: 'Cinzel', serif;
-    background-color: #e2f3e2;
+    background-color: #e2f3e2; /* Pale Green */
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 /* 3. Headlines Stand Out */
-.main-headline {
+.headline-bold {
     font-family: 'Cinzel', serif;
-    font-size: 2.8rem; /* Large and bold */
-    letter-spacing: 4px;
-    margin-bottom: 30px;
+    font-size: 3rem; /* Extra large headlines */
+    letter-spacing: 5px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-/* Grids & Layouts */
-.service-grid, .category-grid, .product-grid {
+.sub-headline {
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Layout Grids */
+.section-container {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.grid-three-col {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
-    padding: 40px 5%;
 }
 
-.cat-item img, .service-card img {
+.card img, .cat-item img {
     width: 100%;
-    max-width: 350px;
-    border-radius: 5px;
+    max-width: 380px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.coming-soon {
-    display: block;
-    margin: 20px auto;
-    background: var(--sage);
+.sub-links {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* Specific Section Backgrounds */
+.lavender-bg { background-color: var(--lavender); }
+.sage-bg { background-color: #f2f7f2; }
+
+.status-btn {
+    background-color: var(--sage);
     color: white;
-    padding: 12px 40px;
-    border-radius: 20px;
     border: none;
+    padding: 12px 50px;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
 }
