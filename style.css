@@ -1,4 +1,3 @@
-/* Styling Reset & Variables */
 :root {
     --sage: #4a5d4e;
     --lavender: #e8d9e8;
@@ -9,49 +8,60 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px; /* Bigger base text for luxury feel */
+    font-size: 20px;
     background-color: var(--cream);
-    overflow-x: hidden;
 }
 
-/* 1. Header & Big Logo Top Left */
-.main-nav {
+/* 1. Centered Tab Menu Bar & Top-Left Logo */
+.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 4%;
+    padding: 10px 4%;
     background: #fff;
+    position: relative;
+    height: 120px;
+}
+
+.logo-corner {
+    position: absolute;
+    left: 4%;
+    top: 10px;
 }
 
 .brand-logo {
-    height: 180px; /* Massive Logo as requested */
+    height: 140px; /* Big logo as requested */
     width: auto;
-    display: block;
+}
+
+.centered-tab-nav {
+    margin: 0 auto; /* This centers the menu bar like a tab */
+    background: #f9f9f9;
+    padding: 10px 30px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
     cursor: pointer;
 }
 
-/* 2. Hero Image & Bottom-Right Button */
-.hero-block {
-    width: 100%;
-    position: relative;
-}
-
+/* 2. Hero Image & Centered-Right Button */
 .hero-image-wrapper {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 650px;
 }
 
 .full-hero-img {
@@ -62,39 +72,40 @@ body {
 
 .hero-quiz-btn {
     position: absolute;
-    bottom: 60px; /* Positioned bottom */
-    right: 5%;    /* Positioned center */
-    padding: 25px 50px; /* Bigger Button */
+    bottom: 60px;
+    right: 15%; /* Increased from 5% to center it slightly more to the left */
+    padding: 22px 45px;
     font-family: 'Cinzel', serif;
-    font-size: 1.4rem;
-    background-color: #e2f3e2; /* Pale green */
+    font-size: 1.3rem;
+    background-color: #e2f3e2;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    transition: 0.3s;
 }
 
-/* 3. Bold Headlines */
+/* 3. Headline & Sub-Headline Adjustments */
 .bold-headline {
     font-family: 'Cinzel', serif;
-    font-size: 3.5rem; /* Standing out as requested */
+    font-size: 3.5rem;
     letter-spacing: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 5px; /* Tighter spacing to sub-header */
     color: #1a1a1b;
 }
 
-.sub-text {
+.sub-headline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem; /* Large but smaller than the main header */
     letter-spacing: 3px;
+    margin-top: 0;
     margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #555;
 }
 
-/* Layout Sections */
-.content-section {
-    padding: 100px 5%;
-    text-align: center;
-}
-
+/* Grids */
+.content-section { padding: 100px 5%; text-align: center; }
 .purple-tint { background-color: var(--lavender); }
 .sage-tint { background-color: #f2f7f2; }
 
@@ -107,17 +118,11 @@ body {
 
 .service-box img, .cat-box img {
     width: 100%;
-    max-width: 400px; /* Large professional grid */
+    max-width: 380px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.product-item {
-    background: #fff;
-    padding: 20px;
-    width: 300px;
-}
-
+.product-item { background: #fff; padding: 20px; width: 280px; }
 .product-item img { width: 100%; }
 
 .coming-soon-pill {
@@ -128,5 +133,4 @@ body {
     border-radius: 30px;
     margin-top: 50px;
     font-weight: bold;
-    cursor: pointer;
 }
