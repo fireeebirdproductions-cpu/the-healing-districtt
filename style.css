@@ -125,12 +125,12 @@ body {
 }
 
 /* Keeps images looking consistent on the product page */
-.product-item img {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 8px;
+.secondary-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    z-index: 2; /* Add this line */
 }
 
 /* --- THE HOVER SWAP EFFECT --- */
