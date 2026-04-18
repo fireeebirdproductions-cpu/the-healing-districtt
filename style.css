@@ -24,7 +24,7 @@ body {
 }
 
 .logo-corner { position: absolute; left: 4%; top: 10px; }
-.brand-logo { height: 140px; width: auto; }
+.brand-logo { height: 140px; width:; }
 
 .centered-tab-nav {
     margin: 0 auto;
@@ -43,7 +43,7 @@ body {
 .hero-quiz-btn {
     position: absolute;
     bottom: 60px;
-    right: 15%;
+    right: 25%;
     padding: 22px 45px;
     font-family: 'Cinzel', serif;
     font-size: 1.3rem;
