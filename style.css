@@ -17,14 +17,15 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    padding: 15px 10%;
+    padding: 10px 4%;
     background: #fff;
     position: relative;
     height: 120px;
 }
 
 .logo-corner { position: absolute; left: 4%; top: 10px; }
-.brand-logo { height: 160px; width: auto; }
+.brand-logo { height: 100px; /* Shrinks the logo so it doesn't block the menu */
+    width: auto; }
 
 .centered-tab-nav {
     margin: 0 auto;
@@ -208,4 +209,3 @@ body {
 
 .image-container:hover .primary-img {
     opacity: 0;
-}
