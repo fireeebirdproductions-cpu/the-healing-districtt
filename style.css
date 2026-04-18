@@ -24,7 +24,7 @@ body {
 }
 
 .logo-corner { position: absolute; left: 4%; top: 10px; }
-.brand-logo { height: 100px; width: auto; }
+.brand-logo { height: 140px; width: auto; }
 
 .centered-tab-nav {
     margin: 0 auto;
