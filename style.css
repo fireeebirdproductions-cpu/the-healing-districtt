@@ -69,9 +69,52 @@ body {
 }
 
 /* Headlines */
-.bold-headline { font-family: 'Cinzel', serif; font-size: 3.5rem; letter-spacing: 6px; margin-bottom: 5px; text-align: center; }
-.sub-headline { font-family: 'Montserrat', sans-serif; font-weight: 300; font-size: 1.8rem; letter-spacing: 3px; margin-top: 0; margin-bottom: 50px; text-transform: uppercase; color: #555; text-align: center; }
+.bold-headline { 
+    font-family: 'Cabin Sketch', cursive; /* This replaces Cinzel */
+    font-size: 3.5rem; 
+    letter-spacing: 4px; 
+    margin-bottom: 5px; 
+    text-align: center;
+    color: #333;
+}
 
+/* If you want the category titles (Gemstones, etc.) to match: */
+.cat-item h3, .cat-box h3 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2rem;
+    text-transform: none; /* Sketch fonts often look better in mixed case */
+}
+/* Styling for links within categories to look like buttons */
+.sub-links a, .links a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--lavender-tab); /* Uses your brand lilac */
+    color: #333;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 25px; /* Creates the pill shape */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Hover effect for the new buttons */
+.sub-links a:hover, .links a:hover {
+    background-color: var(--sage);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* Specific fix for the Gemstones container to keep buttons aligned */
+.your-container-class p {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 /* Grids & Sections */
 .content-section { padding: 100px 5%; text-align: center; }
 .purple-tint { background-color: var(--lavender-bg); }
