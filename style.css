@@ -246,3 +246,22 @@ body {
     margin-top: 40px;
     text-align: center;
 }
+
+    /* Styling for the category sub-links to match the screenshots */
+.sub-links a {
+    display: inline-block;
+    background-color: var(--lavender-tab); /* Matches your nav bar color */
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    margin: 5px;
+}
+
+.sub-links a:hover {
+    background-color: var(--lavender-bg);
+    transform: translateY(-2px);
+}
