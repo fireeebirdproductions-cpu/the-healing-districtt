@@ -221,3 +221,30 @@ body {
 .image-container:hover .primary-img {
     opacity: 0;
 }
+
+/* Policy Page Formatting */
+.policy-text-block {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.policy-list {
+    list-style: none;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.policy-list li {
+    margin-bottom: 10px;
+}
+
+.sketch-headline {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2.8rem;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
