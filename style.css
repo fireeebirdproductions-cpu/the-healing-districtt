@@ -17,7 +17,7 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    padding: 10px 4%;
+    padding: 15px 4%;
     background: #fff;
     position: relative;
     height: 120px;
