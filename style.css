@@ -23,33 +23,21 @@ body {
     height: 120px;
 }
 
-.logo-corner { 
-    position: absolute; 
-    left: 20%; /* Increased from 4% to move it closer to the center */
-    top: 10px;
+.logo-corner { position: absolute; left: 4%; top: 10px; }
+.brand-logo { height: 160px; width: auto; }
 
 .centered-tab-nav {
     margin: 0 auto;
     background: var(--lavender-tab);
-    padding: 15px 45px; /* Increased padding for a larger pill shape */
+    padding: 10px 30px;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Slightly deeper shadow for the larger size */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.nav-links li { 
-    font-weight: 700; /* Bolder weight */
-    text-transform: uppercase; 
-    font-size: 1.1rem; /* Increased from 0.85rem */
-    letter-spacing: 2px; /* Spread letters slightly for a premium feel */
-    cursor: pointer; 
-}
-    .nav-links { 
-    display: flex; 
-    list-style: none; 
-    gap: 60px; /* Increased gap from 40px */
-    margin: 0; 
-    padding: 0; 
-}
-    
+
+.nav-links { display: flex; list-style: none; gap: 40px; margin: 0; padding: 0; }
+.nav-links li { font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; cursor: pointer; }
+
+/* Hero Section */
 .hero-image-wrapper { position: relative; width: 100%; height: 650px; }
 .full-hero-img { width: 100%; height: 100%; object-fit: cover; }
 .hero-quiz-btn {
@@ -220,31 +208,4 @@ body {
 
 .image-container:hover .primary-img {
     opacity: 0;
-}
-
-/* Policy Page Formatting */
-.policy-text-block {
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    text-align: left;
-    line-height: 1.6;
-}
-
-.policy-list {
-    list-style: none;
-    padding: 0;
-    font-weight: 700;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.policy-list li {
-    margin-bottom: 10px;
-}
-
-.sketch-headline {
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 2.8rem;
-    margin-top: 60px;
-    margin-bottom: 20px;
 }
