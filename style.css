@@ -208,3 +208,41 @@ body {
 
 .image-container:hover .primary-img {
     opacity: 0;
+
+/* Centering the About Page Container */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto; /* Centers the block on the page */
+    text-align: center; /* Centers all text inside */
+    padding: 40px 20px;
+}
+
+/* Fix for the Profile Image Frame */
+.profile-frame {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 30px auto; /* Centers the image frame */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Centering and Spacing for the Personal Message */
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center; /* Ensures paragraphs remain centered */
+}
+
+.signature {
+    margin-top: 40px;
+    text-align: center;
+}
